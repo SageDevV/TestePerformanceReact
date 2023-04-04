@@ -1,4 +1,6 @@
 import { useMemo, useState } from "react"
+import ChildOne from "./Components/ChildOne"
+import ChildTwo from "./Components/ChildTwo"
 
 function App() {
   const [numberPontOne, setNumberPontOne] = useState(0)
@@ -30,6 +32,10 @@ function App() {
       <div>
         <input type="number" onChange={(event) => setNumberSumTwo(parseInt(event.target.value))}></input>
       </div>
+      <hr />
+      <br />
+      <ChildOne />
+      <ChildTwo />
     </div>
   )
 }
